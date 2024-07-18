@@ -235,7 +235,7 @@ function ProductList() {
 		display: "flex",
 		justifyContent: "space-between",
 		alignItems: "center",
-		width: "1100px",
+		width: "70%",
 	};
 	const styleA = {
 		color: "white",
