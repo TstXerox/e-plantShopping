@@ -196,12 +196,13 @@ body {
 	border-right: none;
 }
 /* Add Media Query for responsiveness */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 	.product-card {
-		flex: 1 1 calc(50% - 20px); /* Adjust width for 2 cards per row with 20px gap on smaller screens */
-		max-width: calc(50% - 20px); /* Adjust max-width for 2 cards per row with 20px gap on smaller screens */
-	}
-}
+   	/* flex: 0 0 calc(33.33% - 20px); Adjust width for 3 cards per row with 20px gap */
+		/* flex: 1 1 calc(49% - 20px); Adjust width for 2 cards per row with 20px gap on smaller screens */
+		/* max-width: calc(49% - 20px); Adjust max-width for 2 cards per row with 20px gap on smaller screens */
+	/* } */
+/* } */
 /* ProductList.css */
 
 .product-button {
@@ -234,8 +235,8 @@ body {
 
 @media (max-width: 768px) {
 	.product-card {
-		flex: 1 1 calc(50% - 20px); /* Adjust width for 2 cards per row with 20px gap on small screens */
-		max-width: calc(50% - 20px); /* Adjust max-width for 2 cards per row with 20px gap on small screens */
+		flex: 1 1 calc(45% - 20px); /* Adjust width for 2 cards per row with 20px gap on small screens */
+		max-width: calc(45% - 20px); /* Adjust max-width for 2 cards per row with 20px gap on small screens */
 	}
 	.navbar {
 		flex-direction: column; /* Change flex direction to stack items vertically */
@@ -255,5 +256,12 @@ body {
 
 	.ul div {
 		text-align: center; /* Align text to the center */
+	}
+}
+
+@media screen and (max-width: 480px) {
+   .product-card {
+      flex: 1 calc(80% - 20px);
+		max-width: calc(80% - 20px);
 	}
 }
